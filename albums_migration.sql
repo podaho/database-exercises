@@ -8,5 +8,6 @@ create table albums (
   name VARCHAR(100) not null,
   release_date int,
   sales FLOAT,
-  genre VARCHAR(50)
+  genre VARCHAR(50),
+  UNIQUE (artist, name)
 );
