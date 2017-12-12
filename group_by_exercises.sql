@@ -4,7 +4,7 @@ select DISTINCT title from titles order by title;
 
 select title, count(*) as 'count' from titles group by title order by title;
 
-select last_name, count(*) as 'count' from employees where last_name like 'e%e' GROUP BY last_name;
+select last_name from employees where last_name like 'e%e' GROUP BY last_name;
 
 select concat(last_name, ' ', first_name) as 'full name', count(*) as 'count' from employees where (last_name like 'E%' and last_name like '%e') group by concat(last_name, ' ', first_name) order by concat(last_name, ' ', first_name);
 
