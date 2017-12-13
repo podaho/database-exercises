@@ -1,6 +1,6 @@
 use employees;
 
-select DISTINCT title from titles order by title;
+select distinct title from titles order by title;
 
 select title, count(*) as 'count' from titles group by title order by title;
 
