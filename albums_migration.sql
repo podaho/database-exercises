@@ -9,5 +9,5 @@ create table albums (
   release_date int,
   sales FLOAT,
   genre VARCHAR(50),
-  UNIQUE (artist, name)
+  UNIQUE (name, artist)
 );
